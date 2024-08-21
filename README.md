@@ -1,3 +1,3 @@
 # HPC-TMA881
 
-## Course material for TMA881 High Performance Computing
+## My course work in TMA881 High Performance Computing
