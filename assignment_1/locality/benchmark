@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo " "
+echo "###########################"
+echo "####### BENCHMARK_O0 ######"
+echo "###########################"
+echo " "
+
+./locality_row_O0 && ./locality_col_O0 && ./locality_col_modified_O0
+
+echo " "
+echo "###########################"
+echo "####### BENCHMARK_O2 ######"
+echo "###########################"
+echo " "
+
+./locality_row_O2 && ./locality_col_O2 && ./locality_col_modified_O2
+
+echo " "
+echo "###########################"
+echo "### BENCHMARK_O2_NATIVE ###"
+echo "###########################"
+echo " "
+
+./locality_row_O2_native && ./locality_col_O2_native && ./locality_col_modified_O2_native
+
+echo " "

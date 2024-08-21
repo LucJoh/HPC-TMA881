@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./same_file
+./different_file
+./inlined_manually

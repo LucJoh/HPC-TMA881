@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo " "
+echo "##############################"
+echo "######## BENCHMARK_O0 ########"
+echo "##############################"
+echo " " 
+
+./data_dependency_O0 && ./data_dependency_unrolled2_O0 && ./data_dependency_unrolled4_O0 && ./data_dependency_unrolled8_O0 && ./data_dependency_unrolled4_modified_O0
+
+echo " "
+echo "##############################"
+echo "######## BENCHMARK_O2 ########"
+echo "##############################"
+echo " "
+
+./data_dependency_O2 && ./data_dependency_unrolled2_O2 && ./data_dependency_unrolled4_O2 && ./data_dependency_unrolled8_O2 && ./data_dependency_unrolled4_modified_O2
+
+echo " "
+echo "##############################"
+echo "##### BENCHMARK_O2_native ####"
+echo "##############################"
+echo " "
+
+./data_dependency_O2_native && ./data_dependency_unrolled2_O2_native && ./data_dependency_unrolled4_O2_native && ./data_dependency_unrolled8_O2_native && ./data_dependency_unrolled4_modified_O2_native
+
+echo " " 
+

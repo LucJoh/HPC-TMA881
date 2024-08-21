@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo " "
+echo "##############################"
+echo "######## BENCHMARK_O0 ########"
+echo "##############################"
+echo " " 
+
+./indirect_addressing_linear_O0 && ./indirect_addressing_jumps_O0 && ./direct_addressing_O0
+
+echo " "
+echo "##############################"
+echo "######## BENCHMARK_O2 ########"
+echo "##############################"
+echo " "
+
+./indirect_addressing_linear_O2 && ./indirect_addressing_jumps_O2 && ./direct_addressing_O2
+
+echo " "
+echo "##############################"
+echo "##### BENCHMARK_O2_native ####"
+echo "##############################"
+echo " "
+
+./indirect_addressing_linear_O2_native && ./indirect_addressing_jumps_O2_native && ./direct_addressing_O2_native
+
+echo " " 
+
